@@ -2,8 +2,14 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+//import '@/assets/css/app.css'
+// import './assets/index.css'
+// import "tailwindcss/tailwind.css"
+import AppButton from "@/components/AppButton.vue";
 
 Vue.config.productionTip = false
+
+Vue.component('AppButton', AppButton)
 
 new Vue({
   router,
