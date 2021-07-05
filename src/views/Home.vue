@@ -41,5 +41,11 @@ export default {
       showProject: false,
     };
   },
+  methods: {
+    
+  },
+  mounted() {
+
+  }
 };
 </script>
