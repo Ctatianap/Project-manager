@@ -12,8 +12,8 @@
           <p class="px-3">Mis reportes de dedicación</p>
         </div>
       </div>
-      <div v-if="!show_reports" class="px-6 mt-10 gray-2 flex flex-col items-center">
-        <p class="italic text-sm text-center mb-6">Escribe el número de la semana a lreportar y el porcentaje de dedicación que trabajaste en el proyecto durante esa semana.</p>
+      <div v-if="!show_reports" class="px-6 my-16 gray-2 flex flex-col items-center">
+        <p class="italic text-sm text-center mb-6">Escribe el número de la semana a reportar y el porcentaje de dedicación que trabajaste en el proyecto durante esa semana.</p>
         <div class="flex flex-row">
           <span>
           Semana -
@@ -27,7 +27,7 @@
             <i class="fa-2x fas fa-save" :class="dedication.week_number > 0 && dedication.pct_dedication > 0 ? 'success' : 'gray-3'"></i>
           </button>
         </div>
-        <p v-if="success" class="mt-3 font-bold success">Se tu información ha guardado exitosamente</p>
+        <p v-if="success" class="mt-3 font-bold success">Tú información ha guardado exitosamente</p>
         <p v-if="isDuplicateWeek" class="mt-3 font-bold danger">Ya se ha ragistrado una dedicación con este número de semana</p>
       </div>
       <div v-if="show_reports" class="px-6 h-56 overflow-y-auto scrollbar-w-2 scrollbar-track-gray-lighter scrollbar-thumb-rounded scrollbar-thumb-gray">
