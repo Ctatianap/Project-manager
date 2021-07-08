@@ -17,6 +17,9 @@ export default new Vuex.Store({
     user: null,
   },
   mutations: {
+    addNewDedication(state, payload) {
+      state.dedications.push(payload);
+    },
     setDedications(state, payload) {
       state.dedications = payload;
     },
@@ -46,6 +49,7 @@ export default new Vuex.Store({
           }
         );
         if (response.status === 200) {
+          commit('addNewDedication', response.data)
           return true
         }
       } catch (error) {
@@ -64,7 +68,6 @@ export default new Vuex.Store({
         if (response.status === 201) {
           let dedications = [...state.dedications]
           dedications = dedications.filter(item => item.id !== dedication.id)
-          console.log(dedications)
           commit("setDedications", dedications);
           return true
         }
@@ -155,7 +158,8 @@ export default new Vuex.Store({
         });
         console.log(response);
         if (response.status === 200) {
-          commit("setUser", response.data);
+          commit("setUser", null);
+          window.localStorage.removeItem("project-manager-user");
           return true;
         }
       } catch (error) {

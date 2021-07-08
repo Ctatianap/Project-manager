@@ -63,3 +63,49 @@ body{
 .danger {
     color: #F44336;
 }
+
+.scrollbar-w-2::-webkit-scrollbar {
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+}
+  
+.scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+    border-radius: 0.25rem !important;
+}
+  
+.scrollbar-thumb-gray::-webkit-scrollbar-thumb {
+    background-color: #cbd5e0 !important;
+}
+  
+.scrollbar-track-gray-lighter::-webkit-scrollbar-track {
+background-color: #e2e8f0 !important;
+}
+
+.notification {
+  position: fixed;
+  top: 5rem;
+  right: 3rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #;
+}
+.notification.success {
+  background-color: #8BC34A;
+}
+.notification.error {
+  background-color: #F44336;
+}
+
+
+.bg-tertiary-1 {
+    background-color: #2A37B3;
+}
+
+.bg-tertiary-2 {
+    background-color: #B9BDF7;
+}
+
+.bg-tertiary-3 {
+    background-color: #E3E6FF;
+}

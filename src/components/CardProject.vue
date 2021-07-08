@@ -29,7 +29,7 @@
       </div>
     </div>
     <div @click="toggleViewDedications">
-      <app-button> Ver dedicación </app-button>
+      <app-button> Ver más </app-button>
     </div>
     <project-dedications-modal
       v-if="dedicationsModal"

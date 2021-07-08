@@ -1,29 +1,31 @@
 <template>
-  <div class="relative bg-white">
+  <div class="relative bg-tertiary-3">
     <div
-      class="
-        flex
+      class=" container mx-auto
+        flex flex-row pt-4
         justify-between
         items-center
         border-b-2 border-gray-100
-        py-6
-        md:justify-start
         md:space-x-10
       "
     >
-      <div class="flex justify-start lg:w-0 lg:flex-1">
-        <p
-          class="text-3xl font-bold title-font mb-6 ml-4"
-          style="color: #e78a65"
-        >
+      <div class="w-1/2 flex justify-start lg:w-0 lg:flex-1">
+        <img :src="require('@/assets/images/logo.svg')" alt="header" class="h-10"> 
+        <p class="text-4xl font-bold title-font mb-6 tertiary-1 pl-4" >
           Projectify
         </p>
       </div>
-      <div class="md:flex items-center justify-end md:flex-1 lg:w-0">
+      <div class="w-1/2 flex flex-row justify-end">
+        <p class="hover:underline tertiary-1 text-lg font-semibold pr-16">Inicio</p>
+        <p class="hover:underline tertiary-1 text-lg font-semibold pr-16">Sobre nosotros</p>
+        <p class="hover:underline tertiary-1 text-lg font-semibold pr-16">Contáctanos</p>
+         <div class="flex items-center justify-end">
         <div @click="logout">
-          <app-button>Cerrar sesión</app-button>
+          <button class="rounded-full bg-tertiary-2 hover:bg-purple-300 tertiary-1 font-semibold px-3 py-1 -mt-2">Cerrar sesión</button>
         </div>
       </div>
+      </div>
+     
     </div>
   </div>
 </template>
@@ -35,6 +37,9 @@ export default {
     async logout() {
       const success = await this.$store.dispatch("logout");
       if (success) {
+        this.$router.push({ name: "Login" });
+      } else {
+        window.localStorage.removeItem("project-manager-user");
         this.$router.push({ name: "Login" });
       }
     },
