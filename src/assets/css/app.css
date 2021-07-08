@@ -81,22 +81,6 @@ body{
 background-color: #e2e8f0 !important;
 }
 
-.notification {
-  position: fixed;
-  top: 5rem;
-  right: 3rem;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-weight: bold;
-  color: #;
-}
-.notification.success {
-  background-color: #8BC34A;
-}
-.notification.error {
-  background-color: #F44336;
-}
-
 
 .bg-tertiary-1 {
     background-color: #2A37B3;
@@ -111,5 +95,5 @@ background-color: #e2e8f0 !important;
 }
 
 .h-105{
-    height: 36rem;
+    height: 30rem;
 }

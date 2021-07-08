@@ -41,14 +41,12 @@
 <script>
 import AppNav from "@/components/layout/AppNav.vue";
 import CardProject from "@/components/CardProject.vue";
-import CreateDedicationModal from '@/components/CreateDedicationModal.vue'
 
 export default {
   name: "Home",
   components: {
     AppNav,
     CardProject,
-    CreateDedicationModal
   },
   data() {
     return {
