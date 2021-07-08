@@ -2,16 +2,16 @@
   <div class="h-screen mx-auto">
     <app-nav />
     <div class="container mx-auto">
-      <div class="flex flex-row items-center py-8">
-          <div class="w-2/3 px-24">
+      <div class="flex flex-col md:flex-row items-center py-8">
+          <div class="w-full md:w-2/3 px-5 md:px-24">
             <p class="tertiary-1 text-4xl font-medium my-4">Bienvenido</p>
             <p class="gray-3 mb-8">Gestiona tus proyectos, visualiza tus reportes y registra tu porcentage de progreso...</p>
-            <p class="gray-3 mb-8 pr-16">Aliquam erat volutpat. Suspendisse rhoncus lorem ac maximus lacinia. Aliquam erat volutpat. 
+            <p class="gray-3 mb-8 md:pr-16">Aliquam erat volutpat. Suspendisse rhoncus lorem ac maximus lacinia. Aliquam erat volutpat. 
               Nam consequat urna nec risus pulvinar dapibus. Proin nisi nibh, vulputate eget eros non, phar etra volutpat
                magna. Duis cursus consectetur nisl el consectetur. Aliquam ligula urna, egestas eliquam erat volutpat. Suspendisse rhoncus</p>
           </div>
-          <div class="w-1/3">
-            <img :src="require('@/assets/images/header.png')" alt="header" class="h-64"> 
+          <div class="w-full md:w-1/3 ">
+            <img :src="require('@/assets/images/header.png')" alt="header" class="mx-auto h-64"> 
           </div>
         </div>
         <div class="bar py-2 px-6 rounded-md flex items-center justify-between mb-2">

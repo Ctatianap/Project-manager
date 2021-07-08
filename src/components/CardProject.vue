@@ -19,8 +19,8 @@
     />
     <div class="flex items-center mb-4">
       <div class="p-4">
-        <p class="primary-1 text-s font-medium h-12">{{ project.name }}</p>
-        <p class="text-purple-400 font-semibold  mb-4">{{ project.quote_number }}</p>
+        <p class="primary-1 text-s font-medium h-16">{{ project.name }}</p>
+        <p class="text-purple-400 font-semibold mb-4">{{ project.quote_number }}</p>
         <p class="text-xs text-gray-400">Aliquam erat volutpat. Suspendisse rhoncus lorem ac maximus 
           lacinia. Aliquam erat volutpat. Nam consequat urna nec risus 
           pulvinar dapibus. Proin nisi nibh, vulputate eget eros non, phar
