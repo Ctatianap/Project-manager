@@ -1,6 +1,6 @@
 <template>
   <div class="fixed inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center pt-10">
-    <div class="relative h-2/3 bg-white rounded-lg shadow-lg" style="width:600px">
+    <div class="relative h-105 bg-white rounded-lg shadow-lg" style="width:600px">
       <div class="p-4 mb-8">
         <h2 class="text-xl tertiary-1 font-medium text-center bg-indigo-200 -m-4 p-4 rounded-t-lg">{{ project.name }}</h2>
       </div>
